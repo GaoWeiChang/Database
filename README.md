@@ -5,6 +5,15 @@
 ```
 SELECT column_name
 FROM table_name
+
+/*----------------------------------*/
+
+SELECT TOP(100) -- select top 100 rows
+	first_name as [First Name] -- If column name include space we need to put inside bracket
+	,last_name as [Last Name]
+	,phone	as Phone
+	,email
+FROM sales.customers
 ```
 
 ### create Table
