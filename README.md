@@ -50,3 +50,23 @@ UPDATE production.employee
 SET name = 'Tom', phone = '333-2222'
 WHERE id = 2
 ```
+
+### filter the data
+```
+SELECT TOP (1000) [customer_id]
+      ,[first_name]
+      ,[last_name]
+      ,[phone]
+      ,[email]
+      ,[street]
+      ,[city]
+      ,[state]
+      ,[zip_code]
+  FROM [BikeStores].[sales].[customers]
+  WHERE customer_id <> 1 AND phone is not null -- filter data
+```
+* If we cannot find the specific value inside the column, we can use ***LIKE*** to find relate value
+```
+WHERE  phone LIKE '%246-8322%' -- find the phone number that similar as 246-8322
+WHERE  first_name LIKE 'W%' -- find the word start with letter W
+```
