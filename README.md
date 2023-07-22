@@ -1,6 +1,12 @@
 # SQL
 
 ## Basic command
+### select columns from the table
+```
+SELECT column_name
+FROM table_name
+```
+
 ### create Table
 ```
 USE database_name
