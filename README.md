@@ -70,3 +70,28 @@ SELECT TOP (1000) [customer_id]
 WHERE  phone LIKE '%246-8322%' -- find the phone number that similar as 246-8322
 WHERE  first_name LIKE 'W%' -- find the word start with letter W
 ```
+
+### Sort the data
+* ASC = ascending order
+* DESC = descending order
+```
+ SELECT TOP (1000) [product_id]
+      ,[product_name]
+      ,[brand_id]
+      ,[category_id]
+      ,[model_year]
+      ,[list_price]
+  FROM [BikeStores].[production].[products]
+  ORDER BY model_year desc
+```
+* Sort multiple column
+```
+ SELECT TOP (1000) [product_id]
+      ,[product_name]
+      ,[brand_id]
+      ,[category_id]
+      ,[model_year]
+      ,[list_price]
+  FROM [BikeStores].[production].[products]
+  ORDER BY model_year, list_price ASC 
+```
