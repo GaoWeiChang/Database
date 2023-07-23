@@ -1,6 +1,4 @@
-# SQL
-
-## Basic command
+# SQL basic command
 ### select columns from the table
 ```
 SELECT column_name
