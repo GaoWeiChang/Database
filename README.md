@@ -93,3 +93,8 @@ WHERE  first_name LIKE 'W%' -- find the word start with letter W
   FROM [BikeStores].[production].[products]
   ORDER BY model_year, list_price ASC 
 ```
+# Database relations
+![image](https://github.com/GaoWeiChang/Database/assets/128176822/86e4fbc3-1245-4843-b7a7-13c3f444224f)
+* *One to One* => Both are has only 1 relation to each other ex. one employee contact has one exployee accounts
+* *Many to Many* => Both are have many relation to each other ex. many writer write many books
+* *One to Many* => (Most popular) One side connect to many of the another side ex. customer can have many order
