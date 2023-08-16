@@ -95,6 +95,18 @@ WHERE  phone LIKE '%246-8322%' -- find the phone number that similar as 246-8322
 WHERE  first_name LIKE 'W%' -- find the word start with letter W
 ```
 
+### Create index in table
+> Index แบบ 1 column (Single-Column Indexes)
+```
+CREATE INDEX index_name
+ON table_name (column_name);
+```
+> Index แบบไม่ซ้ำ (Unique Indexs)
+```
+CREATE UNIQUE INDEX index_name
+on table_name (column_name);
+```
+
 ### Sort the data
 * ASC = ascending order
 * DESC = descending order
